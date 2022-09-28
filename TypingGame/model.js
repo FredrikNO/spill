@@ -1,0 +1,11 @@
+let word='';
+let dictionaryArray=[];
+let lightUp=[];
+let counter=0;
+let timerGame=30;
+let endtime=0;
+let score=0;
+let endMessage='Du har ikke mer tid igjen!';
+let selectedView='Startview';
+let highScore=0;
+let startGame=0;

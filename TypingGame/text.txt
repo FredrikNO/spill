@@ -1,0 +1,24 @@
+There are many possible permutations on this kind of game. I’ll outline one possible concept here:
+    A word is presented in the middle of the screen
+    The user must type out the word letter by letter
+    On correctly typing a letter, the relevant letter in the UI should illuminate in some way
+    On incorrect input; the remaining time should be decremented by 3 seconds or something similar
+    The user would have 1 minute to enter in as many full words as possible
+
+
+
+Primarily, you’ll need to react to user input. This forms the basis of this game.
+Not only correct inputs, 
+so when the user enters the expected letter correctly,
+ but also incorrect inputs — 
+ so when the user enters any letter other than the next letter in the word.
+
+Outside of this, you’ll need a dictionary of words
+(whereby one is selected at random for each turn of the game).
+
+You’ll need to compare the user’s input with the displayed word,
+and then consequently handle the UI updates based on a correct or incorrect keystroke.
+
+Alongside that, you’ll need to be actually timing the game. More specifically, 
+you’ll need to terminate the game after 1 minute,
+making sure you’ve kept count of the number of correct words entered.
